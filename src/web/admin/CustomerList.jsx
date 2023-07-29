@@ -120,7 +120,7 @@ function CustomerList() {
                     </li>
                     <li>
                         <a href="/admin/main" className="nav-link text-white">
-                            동물병원 / 분양소 리스트
+                            사찰 리스트
                         </a>
                     </li>
                 </ul>
@@ -136,14 +136,14 @@ function CustomerList() {
 
             <div className="d-flex flex-column w-100 p-5 vh-100">
                 <div className="d-flex align-items-center mb-4">
-                    <div className="fs-3">반갑습니다, 펫밀리님.</div>
-                    <a href="/admin/customer/register" className="btn btn-primary ms-auto">동물병원 / 분양소 리스트 등록</a>
+                    <div className="fs-3">반갑습니다, 회원님.</div>
+                    <a href="/admin/customer/register" className="btn btn-primary ms-auto">사찰 리스트 등록</a>
                 </div>
 
                 <div className="input-group mb-5">
                     <input type="hidden" name="" id="" value="title"/>
-                    <input onChange={() => handleSearch()} id="searchData" type="text" className="form-control py-3" placeholder="동물병원 / 분양소명을 입력하세요."
-                           aria-label="동물병원 / 분양소명을 입력하세요."
+                    <input onChange={() => handleSearch()} id="searchData" type="text" className="form-control py-3" placeholder="사찰명을 입력하세요."
+                           aria-label="사찰명을 입력하세요."
                            aria-describedby="searchButton"/>
                     <button id="searchButton" className="btn btn-outline-secondary" type="button"><i
                         className="bi bi-search"></i></button>
@@ -152,7 +152,7 @@ function CustomerList() {
                     <table className="table u-table--v3" role="grid">
                         <thead className="thead-light">
                         <tr role="row">
-                            <th className="text-center">동물병원 / 분양소명</th>
+                            <th className="text-center">사찰명</th>
                             <th className="text-center">연락처</th>
                             <th className="text-center">URL주소</th>
                             <th className="text-center">주소</th>
@@ -176,7 +176,7 @@ function CustomerList() {
                                     <td className="py-3">{hospital.kakao_link}</td>
                                     <td className="py-3">{hospital.comment}</td>
                                     <td className="py-3"><a onClick={() => deleteHospital(hospital.id)}
-                                                            target="_self">병원삭제</a></td>
+                                                            target="_self">사찰삭제</a></td>
                                 </tr>
                             ))
                         }
@@ -186,7 +186,7 @@ function CustomerList() {
                 <footer id="footer" className="u-footer--bottom-sticky mt-auto fs-6_5">
                     <div className="row align-items-center">
                         <div className="text-center">
-                            <div className="d-block">· COPYRIGHT(c) 2023 팻밀리 ALL RIGHTS RESERVED .</div>
+                            <div className="d-block">· COPYRIGHT(c) 2023 인천일보아카데미 ALL RIGHTS RESERVED .</div>
                         </div>
                     </div>
                 </footer>

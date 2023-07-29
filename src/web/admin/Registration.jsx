@@ -48,7 +48,7 @@ function Registration() {
         let hospital_address_lng = document.getElementById("hospital_address_lng").value;
 
         if (hospital_name === "") {
-            alert("동물병원 / 분양소명을 입력해주세요.");
+            alert("사찰명을 입력해주세요.");
             return false;
         }
 
@@ -177,7 +177,7 @@ function Registration() {
                         </li>
                         <li>
                             <a href="/admin/main" className="nav-link text-white">
-                                동물병원 / 분양소 리스트
+                                사찰 리스트
                             </a>
                         </li>
                     </ul>
@@ -193,17 +193,17 @@ function Registration() {
 
                 <div className="container d-flex flex-column w-100 p-5 vh-100">
                     <div className="text-center mb-4">
-                        <div className="fs-3 mb-4">동물병원 / 분양소를 등록해보세요.</div>
+                        <div className="fs-3 mb-4">사찰을 등록해보세요.</div>
                     </div>
 
                     <div className="d-flex mb-4">
                         <div className="w-100">
                             <label className="form-label text-start w-100"><i
-                                className="bi bi-check2-circle me-1"></i>동물병원 / 분양소명<span
+                                className="bi bi-check2-circle me-1"></i>사찰명<span
                                 className="text-danger">*</span></label>
                             <input id="hospital_name" name="hospital_name" className="form-control py-3"
                                    type="text"
-                                   placeholder="ex. 우리첫째분양소"/>
+                                   placeholder="ex. 정사암"/>
                         </div>
                         <div className="w-100 mx-5">
                             <label className="form-label text-start w-100" htmlFor="#"><i
@@ -217,7 +217,7 @@ function Registration() {
                         <div className="w-100">
                             <label className="form-label text-start w-100" htmlFor="#"><i
                                 className="bi bi-check2-circle me-1"></i>URL주소생성 <span
-                                className="fs-6_5">(ex. pet-mily.com/woripet)</span><span
+                                className="fs-6_5">(ex. temple.com/woripet)</span><span
                                 className="text-danger">*</span></label>
                             <div className="d-flex align-items-center">
                                 <input id="hospital_url" name="hospital_url" className="form-control py-3 me-2"
@@ -297,7 +297,7 @@ function Registration() {
                     <div className="d-flex mb-4">
                         <div className="w-100 me-4">
                             <label className="form-label text-start w-100" htmlFor="#"><i
-                                className="bi bi-check2-circle me-1"></i>동물병원 / 분양소 주소<span
+                                className="bi bi-check2-circle me-1"></i>사찰 주소<span
                                 className="text-danger">*</span></label>
                             <div className="mb-3">
                                 <input id="hospital_address_lat" name="hospital_address_lat" defaultValue={enroll_company.lat} hidden/>
@@ -335,7 +335,7 @@ function Registration() {
                     <footer id="footer" className="u-footer--bottom-sticky mt-auto fs-6_5">
                         <div className="row align-items-center">
                             <div className="text-center">
-                                <div className="d-block">· COPYRIGHT(c) 2023 팻밀리 ALL RIGHTS RESERVED .</div>
+                                <div className="d-block">· COPYRIGHT(c) 2023 인천일보아카데미 ALL RIGHTS RESERVED .</div>
                             </div>
                         </div>
                     </footer>
